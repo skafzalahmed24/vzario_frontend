@@ -10,6 +10,7 @@ import Loader from './components/Loader'
 import Navbar from './components/Navbar'
 import ScrollProgress from './components/ScrollProgress'
 import PageTransition from './components/PageTransition'
+import RioBot from './components/RioBot'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -19,6 +20,7 @@ import Careers from './pages/Careers'
 import FAQ from './pages/FAQ'
 import Contact from './pages/Contact'
 import Admin from './pages/Admin'
+import GetQuote from './pages/GetQuote'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -66,6 +68,7 @@ function AppContent() {
       <Cursor />
       <Loader />
       <ScrollProgress />
+      <RioBot />
       {location.pathname !== '/admin' && <Navbar />}
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -77,6 +80,7 @@ function AppContent() {
           <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/admin" element={<PageTransition><Admin /></PageTransition>} />
+          <Route path="/get-quote" element={<PageTransition><GetQuote /></PageTransition>} />
         </Routes>
       </AnimatePresence>
     </>

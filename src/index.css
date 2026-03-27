@@ -198,8 +198,8 @@ section {
   font-weight: 900;
   color: var(--white);
   letter-spacing: -0.05em;
-  line-height: normal;
-  padding-bottom: 10px;
+  line-height: 1;
+  clip-path: inset(0 0 0 0);
 }
 
 .loader-bar {
@@ -606,7 +606,7 @@ section {
   font-family: var(--font-primary);
   font-size: clamp(40px, 12vw, 140px);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: 0.15em;
   color: var(--white);
   margin-bottom: 24px;
@@ -616,7 +616,6 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 0.1em; /* extra space for descenders to avoid clipping */
 }
 
 .hero-v-initial {
@@ -2569,23 +2568,6 @@ section {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-  }
-
-  .hero-v2-cta-group {
-    flex-direction: column;
-    width: 100%;
-    gap: 16px;
-  }
-
-  .hero-v2-cta-group .btn-v2-primary,
-  .hero-v2-cta-group .btn-v2-secondary {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero-v2-title {
-    font-size: clamp(50px, 15vw, 140px);
-    line-height: 1.2;
   }
 }
 

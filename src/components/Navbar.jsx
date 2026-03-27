@@ -8,6 +8,7 @@ const links = [
   { label: 'Portfolio', path: '/portfolio' },
   { label: 'Careers', path: '/careers' },
   { label: 'FAQ', path: '/faq' },
+  { label: 'Get a Quote', path: '/get-quote' },
 ]
 
 export default function Navbar() {
